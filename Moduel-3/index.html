@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Password Generator</title>
+  <style>
+    /* CSS Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      display: block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Password Generator</h1>
+  <div class="container">
+    <label for="password-length">Password Length:</label>
+    <input type="number" id="password-length" min="8" max="128" value="8">
+  
+    <label for="lowercase">Include Lowercase Characters:</label>
+    <input type="checkbox" id="lowercase">
+  
+    <label for="uppercase">Include Uppercase Characters:</label>
+    <input type="checkbox" id="uppercase">
+  
+    <label for="numeric">Include Numeric Characters:</label>
+    <input type="checkbox" id="numeric">
+  
+    <label for="special">Include Special Characters:</label>
+    <input type="checkbox" id="special">
+  
+    <button id="generate-btn">Generate Password</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
